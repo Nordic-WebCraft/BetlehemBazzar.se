@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakta Oss - Betlehem Bazzar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Betlehem Bazzar</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="produkter.html">Produkter</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li>
+                    <a href="favoriter.html" class="wishlist-icon">
+                        <i class="fas fa-heart"></i>
+                        <span class="wishlist-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="contact-page">
+        <div class="toast" id="toast">
+            <div class="toast-content">
+                <i class="fas fa-check-circle"></i>
+                <div class="message">
+                    <span class="text">Tack för ditt meddelande!</span>
+                    <span class="text-2">Vi återkommer så snart som möjligt.</span>
+                </div>
+            </div>
+            <div class="progress"></div>
+        </div>
+        <div class="contact-content">
+            <h1>Kontakta Oss</h1>
+            <p class="contact-intro">Vi finns här för att hjälpa dig! Kontakta oss gärna om du har några frågor eller funderingar.</p>
+            
+            <div class="contact-form-container">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="c93d4e45-e3cd-4cd4-8f92-547a7f26f459">
+                    
+                    <div class="form-group">
+                        <label for="name">Namn</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact">E-post eller Telefonnummer</label>
+                        <input type="text" id="contact" name="contact" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Meddelande</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Skicka Meddelande</button>
+                </form>
+            </div>
+
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <h3>E-post</h3>
+                    <p><a href="mailto:ahmedstudio2024@gmail.com">ahmedstudio2024@gmail.com</a></p>
+                    <a href="mailto:ahmedstudio2024@gmail.com" class="contact-button">Skicka E-post</a>
+                </div>
+
+                <div class="contact-method">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telefon/SMS</h3>
+                    <p><a href="tel:0760563629">076 056 36 29</a></p>
+                    <a href="tel:0760563629" class="contact-button">Ring Oss</a>
+                </div>
+
+                <div class="contact-method">
+                    <i class="fas fa-clock"></i>
+                    <h3>Öppettider</h3>
+                    <p>Måndag - Fredag: 09:00 - 18:00</p>
+                    <p>Lördag - Söndag: 10:00 - 16:00</p>
+                </div>
+
+                <div class="contact-method">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Facebook</h3>
+                    <p>Följ oss på Facebook</p>
+                    <a href="https://www.facebook.com/mohsen.omar.71" target="_blank" class="contact-button">
+                        Besök vår Facebook
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-info-extra">
+                <h3>Om Beställningar</h3>
+                <p>För att göra en beställning, välj dina önskade produkter och kontakta oss via telefon eller e-post. 
+                Vi svarar normalt inom 24 timmar och hjälper dig med din order.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-contact">
+            <p><i class="fas fa-envelope"></i> E-post: ahmedstudio2024@gmail.com</p>
+            <p><i class="fas fa-phone"></i> Telefon/SMS: 076 056 36 29</p>
+            <p>
+                <i class="fab fa-facebook"></i>
+                <a href="https://www.facebook.com/mohsen.omar.71" target="_blank" class="footer-social">
+                    Betlehem Bazzar
+                </a>
+            </p>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Betlehem Bazzar. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html> 

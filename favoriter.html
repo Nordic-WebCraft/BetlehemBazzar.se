@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoriter - Betlehem Bazzar</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Betlehem Bazzar</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="produkter.html">Produkter</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li>
+                    <a href="favoriter.html" class="wishlist-icon active">
+                        <i class="fas fa-heart"></i>
+                        <span class="wishlist-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="favorites-page">
+        <div class="favorites-content">
+            <h1>Mina Favoriter</h1>
+            <div id="emptyWishlist" class="empty-wishlist">
+                <i class="far fa-heart"></i>
+                <p>Din favoritlista är tom</p>
+                <a href="produkter.html" class="view-all-button">Utforska Produkter</a>
+            </div>
+            <div class="product-grid" id="favoritesGrid">
+                <!-- Favorites will be loaded here via JavaScript -->
+            </div>
+            <div class="favorites-form-container">
+                <h2>Beställ dina favoritprodukter</h2>
+                <div class="order-info">
+                    <p>Så här fungerar beställningen:</p>
+                    <ol>
+                        <li>Samla dina favoritprodukter genom att klicka på hjärtat vid varje produkt</li>
+                        <li>Fyll i dina kontaktuppgifter i formuläret nedan</li>
+                        <li>Lägg till eventuella önskemål eller frågor i meddelandefältet</li>
+                        <li>Klicka på "Skicka Beställning" - vi kontaktar dig inom kort!</li>
+                    </ol>
+                </div>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="favoritesForm">
+                    <input type="hidden" name="access_key" value="c93d4e45-e3cd-4cd4-8f92-547a7f26f459">
+                    <input type="hidden" name="favorite_products" id="favoriteProductsList">
+                    <input type="hidden" name="from_name" value="Betlehem Bazzar">
+                    <input type="hidden" name="subject" value="En ny beställning!">
+                    
+                    <div class="form-group">
+                        <label for="name">Namn</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact">E-post eller Telefonnummer</label>
+                        <input type="text" id="contact" name="contact" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Meddelande</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Skicka Beställning</button>
+                </form>
+            </div>
+        </div>
+        <div class="toast" id="toast">
+            <div class="toast-content">
+                <i class="fas fa-check-circle"></i>
+                <div class="message">
+                    <span class="text">Tack för din beställning!</span>
+                    <span class="text-2">Vi återkommer så snart som möjligt.</span>
+                </div>
+            </div>
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-contact">
+            <p>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:ahmedstudio2024@gmail.com" class="footer-social">
+                    E-post: ahmedstudio2024@gmail.com
+                </a>
+            </p>
+            <p>
+                <i class="fas fa-phone"></i>
+                <a href="tel:0760563629" class="footer-social">
+                    Telefon/SMS: 076 056 36 29
+                </a>
+            </p>
+            <p>
+                <i class="fab fa-facebook"></i>
+                <a href="https://www.facebook.com/mohsen.omar.71" target="_blank" class="footer-social">
+                    Betlehem Bazzar
+                </a>
+            </p>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Betlehem Bazzar. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+    <script src="favorites.js"></script>
+</body>
+</html> 
