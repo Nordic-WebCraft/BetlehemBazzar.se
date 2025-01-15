@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betlehem Bazzar</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Betlehem Bazzar</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="produkter.html">Produkter</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li>
+                    <a href="favoriter.html" class="wishlist-icon">
+                        <i class="fas fa-heart"></i>
+                        <span class="wishlist-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
+    <header class="hero">
+        <img src="images/Flag_of_Palestine.png" alt="Palestinsk flagga" class="flag">
+        <h1>Välkommen till Betlehem Bazzar!</h1>
+    </header>
+
+    <section class="intro">
+        <p>På Betlehem Bazzar erbjuder vi ett brett utbud av högkvalitativa produkter till bra priser. Oavsett om du letar efter stiliga väskor, hållbara delar, läcker mat eller andra produkter, hittar du det du behöver här.</p>
+    </section>
+
+    <section class="featured-products">
+        <h2>Utvalda Produkter</h2>
+        <div class="product-grid" id="featuredProductGrid">
+            <!-- Featured products will be loaded here via JavaScript -->
+        </div>
+        <div class="view-all">
+            <a href="produkter.html" class="view-all-button">Visa alla produkter</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-grid">
+            <div class="feature-item">
+                <i class="fas fa-tags"></i>
+                <h3>Bra priser</h3>
+                <p>Vi erbjuder ett fantastiskt värde på alla våra produkter.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-clock"></i>
+                <h3>Snabba svar</h3>
+                <p>Vi ser till att svara snabbt och effektivt på dina beställningar.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-store"></i>
+                <h3>Brett utbud</h3>
+                <p>Från vardagliga nödvändigheter till unika fynd, vi har något för alla.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-contact">
+            <p>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:ahmedstudio2024@gmail.com" class="footer-social">
+                    E-post: ahmedstudio2024@gmail.com
+                </a>
+            </p>
+            <p>
+                <i class="fas fa-phone"></i>
+                <a href="tel:0760563629" class="footer-social">
+                    Telefon/SMS: 076-056 36 29
+                </a>
+            </p>
+            <p>
+                <i class="fab fa-facebook"></i>
+                <a href="https://www.facebook.com/mohsen.omar.71" target="_blank" class="footer-social">
+                    Betlehem Bazzar
+                </a>
+            </p>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Betlehem Bazzar. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
